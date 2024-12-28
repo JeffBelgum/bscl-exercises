@@ -72,6 +72,9 @@ OUTER_HEREDOC
 ##############################################################################
 # 1) Customize the shell prompt + welcome
 ##############################################################################
+# Case insensitive tab completion
+RUN echo 'bind "set completion-ignore-case on"' >> /root/.bashrc
+
 # Add a custom prompt
 RUN echo 'export PS1="[\u~bite-sized-cmdline-labs \W]\\$ "' >> /root/.bashrc
 
