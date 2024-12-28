@@ -1,9 +1,6 @@
-# Bite-Sized Command Line Exercises
+# Bite-Sized Command Line
 
-This repository contains a Docker-based environment for exploring and practicing 
-command-line utilities introduced in Wizard Zines: Bite-Sized Command Line.
-
-Please purchase the wonderful zine and follow along with these exercises.
+This repository contains a Docker-based environment for exploring and practicing various command-line utilities. Follow the instructions below to build and run the environment.
 
 ## How to Build & Run
 
@@ -14,14 +11,14 @@ Save the Dockerfile provided above to a file in your directory. Name it `Dockerf
 Build the Docker image using the following command:
 
 ```bash
-docker build -t bite-sized-cmdline .
+docker build -t bite-sized-cmdline-labs .
 ```
 
 ### 3. Run a Container Interactively
 Run the container interactively using the command:
 
 ```bash
-docker run -it bite-sized-cmdline
+docker run -it bite-sized-cmdline-labs
 ```
 
 ### 4. Explore the Environment
@@ -31,7 +28,7 @@ Once inside the container, explore the resources provided:
 ls
 cat README.md
 cd 01_grep
-cat EXERCISES.md
+cat EXERCISES.txt
 ```
 
 ### 5. Start Practicing
