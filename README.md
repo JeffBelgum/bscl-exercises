@@ -1,6 +1,10 @@
-# Bite-Sized Command Line
+# Bite-Sized Command Line Labs
 
-This repository contains a Docker-based environment for exploring and practicing various command-line utilities. Follow the instructions below to build and run the environment.
+This repository contains a Docker-based environment for exploring and practicing various command-line utilities. The exercises provided here are **unofficial supplemental material** designed to complement Julia Evans' [Bite-Sized Command Line](https://wizardzines.com/zines/bite-size-command-line/) zine.
+
+If you enjoy these exercises, we highly recommend purchasing the zine from Julia Evans (@b0rk) to learn more! You can find it [here](https://wizardzines.com/zines/bite-size-command-line/).
+
+**Note:** This repository is not affiliated with Julia Evans or Wizard Zines in any way. It is created by a fan of her work to provide additional practice opportunities for those who have purchased the zine.
 
 ## How to Build & Run
 

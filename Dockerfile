@@ -1,5 +1,8 @@
 ##############################################################################
 # Dockerfile for "Bite-Sized Command Line Labs" exercises.
+# Credit to Julia Evans (@b0rk) and the "Bite-Sized Command Line" zine:
+#   https://wizardzines.com/zines/bite-size-command-line/
+# This is unofficial supplemental material, for those who have purchased the zine.
 ##############################################################################
 FROM ubuntu:22.04
 
@@ -28,7 +31,7 @@ RUN echo 'export PS1="[\u~bite-sized-cmdline-labs \W]\\$ "' >> /root/.bashrc
 WORKDIR /exercises
 
 # We'll store a short welcome text and automatically display it on login
-RUN echo "Welcome to the Bite-Sized Command Line Labs!\n"                             >  /exercises/README.txt \
+RUN echo "Welcome to the **Unofficial** Bite-Sized Command Line Labs!\n"              >  /exercises/README.txt \
  && echo "Explore the exercises in numeric order:"                                    >> /exercises/README.txt \
  && echo "  01_grep"                                                                  >> /exercises/README.txt \
  && echo "  02_find"                                                                  >> /exercises/README.txt \
@@ -46,7 +49,7 @@ RUN echo "Welcome to the Bite-Sized Command Line Labs!\n"                       
  && echo "  14_cat"                                                                   >> /exercises/README.txt \
  && echo "  15_lsof\n"                                                                >> /exercises/README.txt \
  && echo "Type 'cd /exercises/<number>_<topic>' and 'cat EXERCISES.txt' to begin.\n"  >> /exercises/README.txt \
- && echo "Have fun practicing!\n"                                                     >> /exercises/README.txt
+ && echo "Enjoy practicing, and remember to support the official zine if you haven't already purchased it!\n"  >> /exercises/README.txt
 
 RUN echo "cat /exercises/README.txt" >> /root/.bashrc
 
